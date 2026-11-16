@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1d2a">
+  <meta name="description" content="Iron Bridge Property Solutions relationship and opportunity workspace.">
+  <title>Iron Bridge | Operations</title>
+  <link rel="icon" href="assets/iron-bridge-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portal.css">
+  <script defer src="data.js"></script>
+  <script defer src="portal.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="layout">
+    <header class="topbar">
+      <button id="menu" class="icon-button mobile-menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar" data-icon="menu"></button>
+      <a class="brand" href="#overview" aria-label="Iron Bridge Property Solutions home"><img src="assets/iron-bridge-logo.jpg" alt="Iron Bridge Property Solutions"></a>
+      <div class="portal-title"><strong>Internal Portal</strong><span id="crumb"></span></div>
+      <div class="top-actions"><button id="search" class="search-trigger" aria-label="Search workspace"><span data-icon="search"></span><span class="search-copy">Search customers, opportunities, or providers…</span><kbd id="shortcut">⌘ K</kbd></button><span class="workspace-avatar" title="Iron Bridge workspace" aria-label="Iron Bridge workspace">IB</span></div>
+    </header>
+    <aside class="sidebar" id="sidebar">
+      <nav id="nav" aria-label="Main navigation"></nav>
+      <div class="sidebar-foot"><span class="pilot-mark" data-icon="layers"></span><div><strong>Ownership demo</strong><small>Illustrative workspace</small></div></div>
+    </aside>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <dialog id="drawer" class="drawer" aria-labelledby="drawer-title"><div id="drawer-content"></div></dialog>
+  <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div id="search-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
